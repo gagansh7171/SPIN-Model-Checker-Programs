@@ -1,7 +1,7 @@
 # SPIN-Model-Checker-Programs
 
 ## Usage
-Make the Spin repository and add it to path variable
+Download this repository. Make the Spin repository and add it to path variable
 ```
 cd Spin/Src
 make
