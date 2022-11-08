@@ -18,11 +18,11 @@ active proctype counter() {
 	do
     :: count != 10 ->
         if
-        :: count = 0
+        :: incr ->
+			count++
         fi
 	:: else ->
-        :: incr -> 
-		    count++
+        :: count = 0
 	od
 }
 active proctype env() {
