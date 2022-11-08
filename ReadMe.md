@@ -5,7 +5,7 @@ Make the Spin repository and add it to path variable
 ```
 cd Spin/Src
 make
-export $PATH="path/to/present/working/directory:$PATH"
+export PATH="path/to/present/working/directory:$PATH"
 ```
 Run the script in the repository by specifying the promela file-name and the LTL formula name to check for.
 ```
