@@ -25,7 +25,7 @@ active [2] proctype P()
 		// comment below loop to demonstrate failure of mutual exclusion
 		do
 		::	skip ->skip; // had to write this redundant ->skip to avoid unconditional self-loop error
-		od unless( choosing[1-i] ==0 && turn[i]<turn[1-i] && (i == 1) );
+		od unless( choosing[1-i] ==0 && (turn[i]<turn[1-i]||(turn[i]==turn[1-i]&&i==0))  );
 		crit[i]++;
 		skip;
 		skip;
